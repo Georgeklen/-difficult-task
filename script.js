@@ -1,10 +1,8 @@
-let num = 266219;
-num = 2 * 6 * 6 * 2 * 1 * 9;
+let num = (String (266219));
+let numm = 1;
 alert (num);
-let two;
-two = num**3;
-alert (two);
-let three = '1679616';
-alert (three[0]);
-alert (three[1]);
-
+for (let figure of num){
+    numm *=figure **3;
+}
+alert(numm);
+alert (String(numm).substring(0,2));
