@@ -1,8 +1,6 @@
-let num = (String (266219));
-let numm = 1;
-alert (num);
-for (let figure of num){
-    numm *=figure **3;
-}
-alert(numm);
-alert (String(numm).substring(0,2));
+let num = 266219;
+let transNum = (String(266219));
+alert (transNum);
+let container = ((transNum[0] * transNum[1] * transNum[2] * transNum[3] * transNum[4] * transNum[5])**3);
+alert(container)
+alert (String(container).substring(0,2));
