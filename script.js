@@ -1,8 +1,9 @@
-let lang = prompt ("Какая будет раскладка?");
-if (lang === "ru") {
+
+let langs = prompt ("Какая будет раскладка?");
+if (langs === "ru") {
     alert (["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье."])
 } 
-else if (lang === "en") {
+else if (langs === "en") {
     alert (["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday."]) 
 }
 else {
@@ -33,6 +34,6 @@ let lang;
 alert(lang);
 
 let login = prompt ("?");
-let age =(login == "Артём") ? 
+let age = ( login == "Артём") ? 
 (alert ("директор")) : (login == "Максим") ?
  (alert("преподаватель")): alert( "студент",); 
