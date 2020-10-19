@@ -1,6 +1,10 @@
-const num = 266219;
-let transNum = (String(266219));
-alert (transNum);
-let container = ((transNum[0] * transNum[1] * transNum[2] * transNum[3] * transNum[4] * transNum[5])**3);
-alert(container)
-alert (String(container).substring(0,2));
+let num = 266219; 
+
+let twoNum = num.toString()[0];
+for (let i = 1; i<num.toString().length; i++){
+    twoNum *= num.toString()[i];
+}
+
+alert(twoNum);
+
+alert((twoNum ** 3).toString().substring(0,2));
