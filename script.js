@@ -30,7 +30,7 @@ switch (langv) {
 let lang; 
    let ru =  ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье."];
    let en = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday."];
-   lang = en;
+   lang = ru;
 alert(lang);
 
 let login = prompt ("?");
