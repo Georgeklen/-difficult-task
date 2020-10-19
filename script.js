@@ -1,28 +1,9 @@
 "use strict";
 
 let date = new Date();
-const weekday = new Array(7);
-  weekday[0]="Воскресенье";
-  weekday[1]="Понедельник";
-  weekday[2]="Вторник";
-  weekday[3]="Среда";
-  weekday[4]="Четверг";
-  weekday[5]="Пятница";
-  weekday[6]="Суббота";
+const weekday = ["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"]
+const month =  ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"]
 
-const month = new Array(12);
-  month[0]="января";
-  month[1]="февраля";
-  month[2]="марта";
-  month[3]="апрелья";
-  month[4]="мая";
-  month[5]="июнья";
-  month[6]="июлья";
-  month[7]="августа";
-  month[8]="сентября";
-  month[9]="октября";
-  month[10]="ноября";
-  month[11]="декабря";
 
 function num2str(n, text_forms) {  
   n = Math.abs(n) % 100; var n1 = n % 10;
@@ -35,7 +16,7 @@ function num2str(n, text_forms) {
 
 function declOfNum(number, titles) {  
  const cases = [2, 0, 1, 1, 1, 2];  
-  return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
+  return titles[ (number % 100 > 4 && number%100<20) ? 2 : cases[(number % 10 < 5)?number % 10 : 5] ];  
 }
 
 console.log(`Сегодня ${weekday[date.getDay()]}, ${date.getDate()} ${month[date.getMonth()]} ${date.getFullYear()} года, ${date.getHours()} ${declOfNum(date.getHours(), ['час', 'часа', 'часов'])} ${date.getMinutes()} минут ${date.getSeconds()} секунды`);
